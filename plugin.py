@@ -1,11 +1,3 @@
- # software includes geomag.py
-# by Christopher Weiss cmweiss@gmail.com
-# https://github.com/cmweiss/geomag
-# Infos on NMEA0183 from:
-      # https://github.com/mak08/VRDashboard/issues/31
-      # https://www.nmea.org/Assets/100108_nmea_0183_sentences_not_recommended_for_new_designs.pdf
-      # http://www.plaisance-pratique.com/IMG/pdf/NMEA0183-2.pdf
-
 from avnav_nmea import NMEAParser
 import math
 import time
@@ -119,8 +111,8 @@ class Plugin(object):
     while not self.api.shouldStopMainThread():
       if startSequence != self.startSequence:
         self.outFilter = self.getConfigValue('FILTER_NMEA_OUT')
-        if not (isinstance(self.outFilter, list)):
-            self.outFilter = self.outFilter.split(',')
+#        if not (isinstance(self.outFilter, list)):
+#            self.outFilter = self.outFilter.split(',')
       lastTime = time.time()
 
       # fetch from queue till next compute period
@@ -190,4 +182,3 @@ class Plugin(object):
     except Exception:
       self.api.error(" error parsing nmea data " + str(data) + "\n")
     return False
-
