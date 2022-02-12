@@ -1,8 +1,7 @@
 # anchor-chain-counter-test
 simple test to find out how avnav plugins work
 
-![grafik](https://user-images.githubusercontent.com/98450191/153688239-e35b59e5-1980-4b45-a585-1cdbda22e37e.png)
-
+![grafik](https://user-images.githubusercontent.com/98450191/153689730-bb3a86cc-dc4e-4917-a1b1-a70f1d4f65d8.png)
 
 It is widely based on the more nmea plugin => https://github.com/kdschmidt1/avnav-more-nmea-plugin).
 
